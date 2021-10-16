@@ -413,7 +413,7 @@
                 <div class="legal_div_forms">
                     <label for="mail"></label>
                     <input type="email" name="mail" id="mail" placeholder="Е-mail" />
-                    <button class="botton_style" type="submit">Подписаться<svg class="div_button">
+                    <button class="botton_style2" type="submit">Подписаться<svg class="div_button">
                             <use href="./img/icons.svg#icon-icon-send"></use>
                         </svg></button>
                 </div>
@@ -428,35 +428,38 @@
                 </svg>
             </button>
             <form class="formss">
-                <h3 class="text_forms">Оставьте свои данные, мы вам перезвоним</h3>
+                <p class="text_forms">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="modal_forms">
-                    <input type="text" class="input_madal" name="name" id="name" />
+                    <input type="text" class="input_madal" name="name" id="name" placeholder=" " />
                     <label class="label_form" for="name">Имя</label>
                     <span class="modal_icon"><svg class="modal_forms_img">
-                            <use href="./img/icons.svg#icon-name"></use>
+                            <use class="form_modal_icon" href="./img/icons.svg#icon-name"></use>
                         </svg></span>
                 </div>
                 <div class="modal_forms">
-                    <input type="tel" name="tel" id="tel" />
+                    <input type="tel" class="input_madal" name="tel" id="tel" />
                     <label class="label_form" for="tel">Телефон</label>
                     <svg class="modal_forms_img">
                         <use href="./img/icons.svg#icon-tel_fo"></use>
                     </svg>
                 </div>
                 <div class="modal_forms">
-                    <input type="email" name="maill" id="maill" />
+                    <input type="email" class="input_madal" name="maill" id="maill" />
                     <label class="label_form" for="maill">Почта</label>
                     <svg class="modal_forms_img">
                         <use href="./img/icons.svg#icon-e_mail"></use>
                     </svg>
                 </div>
                 <div class="modal_forms1">
-                    <label for="coment">Комментарий</label>
-                    <textarea name="coment" id="coment" rows="7" placeholder="Введите текст"></textarea>
+                    <textarea name="coment" class="input_madal" id="coment" rows="7"
+                        placeholder="Введите текст"></textarea>
+                    <label class="label_form" for="coment">Комментарий</label>
                 </div>
                 <div class="group">
-                    <input type="checkbox" name="topic" value="textt" id="textt" />
-                    <label for="textt">Соглашаюсь с рассылкой и принимаю <span class="text_form">Условия
+                    <label class="group_label" for="textt">
+                        <input class="checkbox" type="checkbox" name="topic" value="textt" id="textt" />
+                        <span class="grop_icon"></span>Соглашаюсь с рассылкой и принимаю
+                        <span class="text_form">Условия
                             договора</span></label>
                 </div>
                 <button class="botton_style" type="submit">Подписаться</button>
