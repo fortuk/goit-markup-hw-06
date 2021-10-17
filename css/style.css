@@ -205,7 +205,6 @@ ul {
   margin-right: 10px;
   color: #757575;
 }
-
 .size {
   padding: 94px 0px;
 }
@@ -232,7 +231,7 @@ ul {
   padding: 10px 32px;
   background-color: #2196f3;
   color: white;
-  ont-weight: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -691,7 +690,7 @@ img {
 }
 .legel_div {
   padding-top: 15px;
-  margin-right: 70px;
+  margin-right: 93px;
 }
 .legel_div2 {
   padding-top: 15px;
@@ -940,9 +939,30 @@ img {
 .legal_div_forms input {
   padding: 15px 16px;
   margin-right: 12px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  transition: 250ms var(--timing-function);
+}
+.legal_div_forms input:hover,
+.legal_div_forms input:focus {
+  border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
 }
 .legal_div_forms button {
   padding: 15px 62px 15px 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
 }
 .text_div_mail {
   font-family: Roboto;
@@ -1007,11 +1027,11 @@ img {
   transition: 250ms var(--timing-function);
   margin-top: 10px;
 }
-.input_madal:focus + .label_form {
+.input_madal:focus + .label_form1 {
   color: #2196f3;
   transition: 250ms var(--timing-function);
 }
-.input_madal:focus + .label_form1 {
+.input_madal:focus + .label_form {
   color: #2196f3;
   transition: 250ms var(--timing-function);
 }
@@ -1029,6 +1049,14 @@ img {
   line-height: 14px;
   color: #757575;
 }
+.modal_forms1 label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+}
 .modal_forms input {
   width: 100%;
   padding: 12px 12px 12px 40px;
@@ -1036,6 +1064,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   margin-top: 3px;
+  transition: 250ms var(--timing-function);
 }
 .group {
   font-family: Roboto;
@@ -1053,22 +1082,7 @@ img {
   width: 15px;
   height: 15px;
 }
-.modal_forms label {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #757575;
-}
-.modal_forms1 label {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #757575;
-}
+
 .modal_forms1 textarea {
   font-family: Roboto;
   font-style: normal;
@@ -1078,6 +1092,7 @@ img {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-top: 3px;
+  transition: 250ms var(--timing-function);
 }
 .text_form {
   color: var(--accent-color);
@@ -1101,36 +1116,52 @@ img {
   height: 18px;
   left: 15px;
   top: 50%;
+  fill: inherit;
   transform: translateY(-50%);
   transition: 250ms var(--timing-function);
 }
-.form_modal_icon {
-  width: 12px;
-  height: 12px;
+.modal_forms_img2 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 15px;
+  top: 50%;
+  fill: #2196f3;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 250ms var(--timing-function);
 }
-.input:active {
-  border: 1px solid #2196f3;
+.modal_forms_img:current {
+  fill: #2196f3;
 }
 .modal_forms:hover .modal_forms_img,
-.label_form:focus .modal_forms_img {
-  fill: #2196f3;
+.modal_forms:focus .modal_forms_img,
+.modal_forms:active .modal_forms_img {
+  fill: var(--accent-color);
+  transition: 250ms var(--timing-function);
+}
+.input_madal:focus ~ .modal_forms_img,
+.input_madal:active .modal_forms_img {
+  fill: var(--accent-color);
   transition: 250ms var(--timing-function);
 }
 .modal_forms input:hover,
-.modal_forms input:focus {
-  border: 1px solid #2196f3;
+.modal_forms input:focus,
+.modal_forms input:active {
   fill: #2196f3;
-  transition: 250ms var(--timing-function);
+  border: 1px solid #2196f3;
+  outline: #2196f3;
 }
 .modal_forms1 textarea:hover,
 .modal_forms1 textarea:focus {
   border: 1px solid #2196f3;
-  transition: 250ms var(--timing-function);
+  outline: #2196f3;
 }
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  -appearance: none;
+  -ms-appearance: none;
 }
 .group_label {
   display: block;
