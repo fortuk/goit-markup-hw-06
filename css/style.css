@@ -1167,7 +1167,7 @@ img {
   outline: #2196f3;
 }
 .checkbox {
-  display: none;
+  opacity: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   -appearance: none;
