@@ -949,8 +949,11 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  width: 358px;
+  color: white;
   transition: 250ms var(--timing-function);
 }
+
 .legal_div_forms input:hover,
 .legal_div_forms input:focus {
   border: 1px solid var(--accent-color);
@@ -967,6 +970,10 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 .text_div_mail {
   font-family: Roboto;
@@ -1143,7 +1150,7 @@ img {
   fill: var(--accent-color);
   transition: 250ms var(--timing-function);
 }
-.input_madal:focus ~ .modal_forms_img{
+.input_madal:focus ~ .modal_forms_img {
   fill: var(--accent-color);
   transition: 250ms var(--timing-function);
 }
@@ -1160,6 +1167,7 @@ img {
   outline: #2196f3;
 }
 .checkbox {
+  display: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -appearance: none;
